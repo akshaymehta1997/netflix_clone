@@ -1,0 +1,120 @@
+.main-contents .movie-slider-type {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.main-contents .movie-list {
+  margin: 40px;
+}
+
+.main-contents ul.movie-slider-1 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* height: 192px; */
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap !important;
+  z-index: 0000000;
+}
+
+.main-contents ul.movie-slider-1 li {
+  display: inline-block;
+  /* float: left; */
+  transition: 500ms;
+  position: relative;
+}
+
+.main-contents ul.movie-slider-1:hover li {
+  transform: translateX(-25%);
+}
+
+.main-contents ul.movie-slider-1 li .controls {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.main-contents ul.movie-slider-1 li:hover .controls {
+  opacity: 1;
+}
+
+.main-contents ul.movie-slider-1 li .controls .btn-control {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: white solid 2px;
+  position: absolute;
+  right: 5px
+}
+
+.main-contents ul.movie-slider-1 li .controls .title,
+.main-contents ul.movie-slider-1 li .controls .age,
+.main-contents ul.movie-slider-1 li .controls .genre {
+  color: white;
+  margin-left: 10px;
+  position: absolute;
+}
+
+.main-contents ul.movie-slider-1 li .controls .genre {
+  bottom: 5px;
+}
+
+.main-contents ul.movie-slider-1 li .controls .age {
+  bottom: 30px;
+}
+
+.main-contents ul.movie-slider-1 li .controls .title {
+  bottom: 55px;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.main-contents ul.movie-slider-1 li .controls .play {
+  position: absolute;
+  margin-left: 5px;
+  bottom: 85px;
+}
+
+
+.main-contents ul.movie-slider-1 li .controls .btn-control-1 {
+  top: 5px;
+}
+
+.main-contents ul.movie-slider-1 li .controls .btn-control-2 {
+  top: 50px;
+}
+
+.main-contents ul.movie-slider-1 li .controls .btn-control-3 {
+  top: 95px;
+}
+
+.main-contents ul.movie-slider-1 li .controls .btn-control-4 {
+  top: 140px;
+}
+
+.main-contents ul.movie-slider-1 li .controls .btn-control img {
+  width: 15px;
+  height: 15px;
+}
+
+
+.main-contents ul.movie-slider-1 li:hover ~ li {
+  transform: translateX(25%);
+}
+
+.main-contents ul.movie-slider-1 li:hover {
+  transform: scale(1.5);
+}
+ 
+.main-contents ul.movie-slider-1:hover {
+  overflow: visible;
+  /* height: 400px; */
+}
